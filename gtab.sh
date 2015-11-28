@@ -26,14 +26,18 @@ district.
 
 Ed Vimmy
 
-The boss of the 'Nixers. His gang is nowhere as rich as the Gnumino family, but
-what they lack in firepower, they make up with their dedication. He has a short
-temper, and tends to snap back at anyone who doesn't do what he wants. His
-headquarters are in the northeastern block of the neighborhood.
+The boss of UniCS (Unified Crime Syndicate), popularly known as the 'Nixers. His
+gang is nowhere as rich as the Gnumino family, but what they lack in firepower,
+they make up with their dedication. He has a short temper, and tends to snap
+back at anyone who doesn't do what he expects of them. His headquarters are in
+the northeastern block of the neighborhood.
 
 
 2.  Wise guys
 -------------
+Grubby Fingers
+
+A rather dim fellow, but one of if not the most loyal Gnumino family member.
 
 
 3.  Lone wolves
@@ -42,10 +46,41 @@ headquarters are in the northeastern block of the neighborhood.
 
 4.  Merchants
 -------------
+Tari Gunzip's Problem Solutions
+
+Principal weapon merchant for Bashside. Sells weapons ("solutions", as he calls
+them) and ammunition for them. He runs his shop around the middle of Share St.
 
 
-5.  Hookers
------------
+Lay Tech Special Supplies
+
+High-end hardware retailer. Carries things such as holographic sights, dazzle
+coats (used for countering laser sights) and etc. He resides at the east end
+of Root Street.
+
+
+Doc Groff
+
+One of only a few doctors residing in Bashside, Doc Groff will treat the player
+differently depending on his karma - the higher, the less the doctor will
+charge for his services. He resides in the southeastern corner of
+Root St/Share St intersection.
+
+
+Fuser's Magical Powders
+
+Runs the principal drug store in Bashside. Located in the upper part of Hoe St.
+
+
+5.  Pimps and hookers
+---------------------
+Joey Python
+
+Starting out as a bartender, Joey quickly turned to procuring clients for his
+newfound female friends. Widely known for his kind demeanor, a rare thing to
+see around in Bashside.
+
+
 Pearl
 
 Though she's not the prettiest girl in town, Pearl is a veteran at her job.
@@ -68,6 +103,10 @@ She takes $200 for a night.
 
 
 CHARACTERS
+
+:<<'ITEMS'
+
+ITEMS
 
 # END DOCUMENTATION.
 
@@ -114,7 +153,9 @@ MAP_BLANK="   |  |        |  |
 declare SAVE_FNAME
 declare LOOP
 
-declare -i STAT_Strength STAT_
+declare -i STAT_Str STAT_Dex STAT_Int STAT_Lck
+declare -i SKILL_Guns SKILL_Melee SKILL_Martial
+
 
 function showHelp {
     local -a lines=(
